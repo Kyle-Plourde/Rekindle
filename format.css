@@ -11,12 +11,17 @@ a {
 	text-decoration: none;
 }
 
-
 #screen {
 	height: 530px;
 	width: 300px;
 	margin: 105px 23px;
 	background-color: black;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#screen::-webkit-scrollbar {
+	width: 0 !important;
 }
 
 .head-bar {

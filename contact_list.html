@@ -3,6 +3,7 @@
         <title>Contact List</title>
         <link rel="stylesheet" type="text/css" href="format.css"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <div id="screen">
@@ -25,12 +26,25 @@
               </div>
 
 			  <div class="search">
-				  <input type="text" placeholder="Search...">
+				  <input type="text" placeholder="Search..." id="search">
+				  <script>
+					  jQuery.expr[':'].Contains = function(a, i, m) {
+						  return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+					  };
+					  $(function() {
+						  $('#search').keyup(function() {
+							  
+							  var match = $('.list-of-names').find('li:Contains(' + $(this).val() + ')');
+							  $('li', '.list-of-names').not(match).slideUp();
+							  match.slideDown();
+						  });
+					  });
+				  </script>
 				  <button type="submit" class="search-button">
 					  <i class="material-icons">search</i>
 				  </button>
 			  </div>
-			  
+
               <ol class= "list-of-names">
 			    <a href="Error.html">
 				  <li class= "songs-text-info">Harry <strong>Bayman Jr. IV</strong></li>
@@ -62,6 +76,12 @@
 				</a>
 				<a href="Error.html">
                   <li class= "songs-text-info">Carina <strong>Venera</strong></li>
+                </a>
+				<a href="Error.html">
+                  <li class= "songs-text-info">Carina <strong>Venera 2</strong></li>
+                </a>
+				<a href="Error.html">
+                  <li class= "songs-text-info">Carina <strong>Venera 3</strong></li>
                 </a>
               </ol>
         </div>
