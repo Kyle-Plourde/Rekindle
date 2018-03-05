@@ -15,7 +15,7 @@ a {
 	height: 530px;
 	width: 300px;
 	margin: 105px 23px;
-	background-color: black;
+	background-color: rosybrown;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
@@ -49,7 +49,7 @@ a {
 	background-color: black;
 	color: white;
 	text-shadow: 1px 1px black;
-	text-align: left;
+	text-align: center;
 	padding: 4px;
 	margin-bottom: 10px;
 }
@@ -60,21 +60,28 @@ a {
 	border-color: white;
 }
 
+.home-logo {
+	height: 35px;
+	width: 130px;
+}
+
 /*
 	Albums
 			*/
 .contact-wrapper {
 	width: 145px;
 	text-align: center;
-	display: inline-block;
 	padding-bottom: 20px;
 	padding-top: 20px;
 	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	top: 170px;
+	left: 30px;
 }
 
 .albums-album-art {
-	height: 130px;
-	width: 130px;
+	height: 100px;
+	width: 100px;
 	padding-left: 5px;
 }
 
@@ -112,6 +119,7 @@ a {
 
 .search {
 	margin-bottom: 0px;
+	margin-top: -30px;
 }
 
 .search input[type=text] {
@@ -129,43 +137,14 @@ a {
 	float: right;
 	margin-right: 5px;
 }
-.profile_view_name{
-	font-weight: bold;
-	font-size: 20px;
-	text-align: left;
-	padding-left: 10px;
-	width: 145px;
-	color: white;
-}
-
-.profile_category{
-font-weight: bold;
-font-size: 16px;
-text-align: left;
-padding-left: 40px;
-margin-top: 20px;
-width: 100px;
-color: grey;
-display: inline-block;
-}
-
-.profile_info{
-font-size: 16px;
-text-align: left;
-padding-left: 10px;
-margin-top: 20px;
-width: 100px;
-color: white;
-display: inline-block;
-}
 
 .search-button:hover {
 	background: #ccc;
 }
 
 .songs-album-art {
-	height: 140px;
-	width: 140px;
+	height: 110px;
+	width: 110px;
 	padding-left: 10px;
 }
 
@@ -304,14 +283,39 @@ display: inline-block;
 
 }
 
-#player-time {
-
+.backimage img
+{
+    width:100%;
+    position: relative;
 }
 
-#time-elapsed {
-
+/* Profile CSS */
+.profile_view_name{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    width: 145px;
+    color: white;
 }
 
-#time-total{
+.profile_category{
+font-weight: bold;
+font-size: 16px;
+text-align: left;
+padding-left: 40px;
+margin-top: 20px;
+width: 100px;
+color: grey;
+display: inline-block;
+}
 
+.profile_info{
+font-size: 16px;
+text-align: left;
+padding-left: 10px;
+margin-top: 20px;
+width: 100px;
+color: white;
+display: inline-block;
 }
