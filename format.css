@@ -129,6 +129,35 @@ a {
 	float: right;
 	margin-right: 5px;
 }
+.profile_view_name{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+	padding-left: 10px;
+	width: 145px;
+	color: white;
+}
+
+.profile_category{
+font-weight: bold;
+font-size: 16px;
+text-align: left;
+padding-left: 40px;
+margin-top: 20px;
+width: 100px;
+color: grey;
+display: inline-block;
+}
+
+.profile_info{
+font-size: 16px;
+text-align: left;
+padding-left: 10px;
+margin-top: 20px;
+width: 100px;
+color: white;
+display: inline-block;
+}
 
 .search-button:hover {
 	background: #ccc;
