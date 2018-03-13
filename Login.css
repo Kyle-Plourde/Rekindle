@@ -24,21 +24,20 @@ body
 
 form
 {
-    float: center;
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
+    margin: 60px;
+    top: 230px;
     position: absolute;
-    top: 200px;
 }
 
 .input
 {
-    width: 45%;
+    width: 200px;
     margin-bottom: 30px;
-    margin-top: 200px;
     margin-left: 10px;
-    position: relative;
+    padding-top: -150px;
     font-family: 'Roboto', sans-serif;
+    position: absolute;
 }
 
 em
@@ -54,4 +53,50 @@ em
 {
     width:100%;
     position: relative;
+}
+
+.login_button
+{
+    position: absolute;
+    top: 230px;
+    width: 100px;
+    left: 44px;
+    border-radius: 15px;
+    border: 1px solid white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: darkslategray;
+}
+
+#username
+{
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    height: 30px;
+    text-align: left;
+    text-indent: 15px;
+    border-radius: 12px;;
+    border: 1px solid rgba(4, 17, 22, 0.186);
+    font-size: 14px;
+}
+
+#password
+{
+    position: absolute;
+    top: 120px;
+    left: -20px;
+    height: 30px;
+    text-align: left;
+    text-indent: 15px;
+    border-radius: 12px;;
+    border: 1px solid rgba(4, 17, 22, 0.186);
+    /* background: lightgoldenrodyellow; */
+
+    font-size: 14px;
+}
+
+
+a {
+    color: white;
 }
