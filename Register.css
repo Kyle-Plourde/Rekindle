@@ -37,6 +37,9 @@ input
     margin-bottom: 15px;
     margin-right: 10px;
     float: right;
+    border-radius: 6px;
+    border: 2px solid white;
+    text-indent: 2px;
 }
 
 input.name
@@ -46,6 +49,9 @@ input.name
     margin-right: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
+    border-radius: 6px;
+    border: 2px solid white;
+    text-indent: 2px;
 }
 
 label
@@ -75,6 +81,14 @@ input.button
     width: 80px;
     position: absolute;
     top: 495px;
-    left: 80px;
-    height: 17px;
+    left: 84px;
+    height: 21px;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+#regibutton
+{
+    text-align: center;
+    padding-top: 2px;
 }
