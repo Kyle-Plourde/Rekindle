@@ -504,3 +504,12 @@ width: 100px;
 color: white;
 display: inline-block;
 }
+
+.logout {
+	position: absolute;
+	top: 122px;
+	left: 45px;
+	padding: 1px;
+	border: 2px solid white;
+	border-radius: 50%;
+}
