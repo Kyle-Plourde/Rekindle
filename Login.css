@@ -24,21 +24,20 @@ body
 
 form
 {
-    float: center;
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
+    margin: 60px;
+    top: 280px;
     position: absolute;
-    top: 200px;
 }
 
 .input
 {
-    width: 45%;
+    width: 170px;
     margin-bottom: 30px;
-    margin-top: 200px;
     margin-left: 10px;
-    position: relative;
+    padding-top: -150px;
     font-family: 'Roboto', sans-serif;
+    position: absolute;
 }
 
 em
@@ -54,4 +53,46 @@ em
 {
     width:100%;
     position: relative;
+}
+
+.login_button
+{
+    position: absolute;
+    top: 150px;
+    width: 100px;
+    left: 44px;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+#username
+{
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+
+#password
+{
+    position: absolute;
+    top: 50px;
+    left: -1px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+
+/* unvisited */
+a:link {
+    color: pink;
+}
+
+/* visited */
+a:visited {
+    color: white;
 }
