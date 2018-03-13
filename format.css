@@ -29,6 +29,10 @@ a {
 	overflow-x: hidden;
 }
 
+#contact_list_background::-webkit-scrollbar {
+	width: 0 !important;
+}
+
 #screen::-webkit-scrollbar {
 	width: 0 !important;
 }
