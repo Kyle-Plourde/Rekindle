@@ -10,15 +10,16 @@
       var snap = localStorage.getItem('snap');
 
       if (fb === 'true') {
-        document.getElementById("fb1").style.display = "inline-block";
+        document.getElementById("fbprof").style.display = "inline-block";
       }
       if (insta === 'true') {
-        document.getElementById("insta1").style.display = "inline-block";
+        document.getElementById("instaprof").style.display = "inline-block";
       }
       if (snap === 'true') {
-        document.getElementById("snap1").style.display = "inline-block";
+        document.getElementById("snapprof").style.display = "inline-block";
       }
     } 
+
     window.onload = function() {
       var notif = localStorage.getItem('notif');
 
@@ -57,9 +58,9 @@
               <div class= "profile_view_header">
                 <div class= "profile_view_name">James Greenfield</div>
                 <div class="profile_view_icon_container">
-                  <div><img id="fb1" class="profile_view_icon" src="images/fb.png"></div>
-                  <div><img id="insta1" class="profile_view_icon" src="images/insta.png"></div>
-                  <div><img id="snap1" class="profile_view_icon" src="images/snap.png"></div>
+                  <div><img id="fbprof" class="profile_view_icon" src="images/fb.png"></div>
+                  <div><img id="instaprof" class="profile_view_icon" src="images/insta.png"></div>
+                  <div><img id="snapprof" class="profile_view_icon" src="images/snap.png"></div>
                 </div>
                 <div class= "profile_view_contacted">Last Contact:</div>
                 <div class= "profile_view_contacted">2 days ago via Facebook</div>

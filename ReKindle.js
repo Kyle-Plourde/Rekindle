@@ -3,6 +3,19 @@ function init()
     localStorage.setItem('james', 'false');
 }
 
+var count = 1;
+function setColor(btn, color) {
+    var property = document.getElementById(btn);
+    if (count == 0) {
+        property.style.backgroundColor = "white"
+        count = 1;        
+    }
+    else {
+        property.style.backgroundColor = "rgb(120, 214, 99)"
+        count = 0;
+    }
+}
+
 function addjames()
 {
     localStorage.setItem('james', 'true');
@@ -26,6 +39,7 @@ function addfb()
     else {
         localStorage.setItem('fb', 'false');
     }
+    setColor('btn1', 'rgb(99, 214, 99)');
 }
 
 function addinsta()
@@ -36,6 +50,7 @@ function addinsta()
     else {
         localStorage.setItem('insta', 'false')
     }
+    setColor('btn2', 'rgb(99, 214, 99)');
 }
 
 function addsnap()
@@ -46,6 +61,7 @@ function addsnap()
     else {
         localStorage.setItem('snap', 'false');
     }
+    setColor('btn3', 'rgb(99, 214, 99)');
 }
 
 function notifweekly()
