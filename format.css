@@ -162,7 +162,15 @@ a {
 	width: 86px;
 	margin-left: 25px;
 	margin-top: 8px;
-margin-bottom: 6px;
+	margin-bottom: 6px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.home_init_icon{
+	height: 100px;
+	width: 100px;
+	margin-left: 24px;
 	border-radius: 50%;
 	display: inline-block;
 }
@@ -627,7 +635,7 @@ display: inline-block;
 	margin-top: 40px;
 	width: 300px;
 	background-color: white;
-	height: 400;
+	height: 334;
 }
 
 .logout {
