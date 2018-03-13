@@ -202,7 +202,8 @@ a {
 	font-weight: bold;
 	width: 145px;
 	height: 19px;
-	color: white;
+	text-indent: 6px;
+	color: rgba(107, 104, 104, 0.76);
 }
 
 .albums-artist-name {
