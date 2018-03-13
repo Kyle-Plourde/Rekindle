@@ -118,7 +118,8 @@ a {
 	Albums
 			*/
 .contact-wrapper {
-	width: 145px;
+	width: 100px;
+	height: 100px;
 	text-align: center;
 	padding-bottom: 20px;
 	padding-top: 20px;
@@ -157,18 +158,49 @@ a {
 }
 
 .home_profile_picture {
+	height: 86px;
+	width: 86px;
+	margin-left: 25px;
+	margin-top: 8px;
+margin-bottom: 6px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.profile_profile_picture {
 	height: 100px;
 	width: 100px;
 	padding-left: 5px;
 	border-radius: 50%;
 	display: inline-block;
+	vertical-align: super;
+}
+
+.profile_view_icon_container{
+	display: inline-block;
+	height: 20px;
+	width: 120px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+}
+
+.profile_view_icon{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin-right: 10px;
+	border-radius: 50%;
+	float: left;
+
 }
 
 .contact-name {
 	font-weight: bold;
 	width: 145px;
 	height: 19px;
-	color: white;
+	text-indent: 6px;
+	color: rgba(107, 104, 104, 0.76);
 }
 
 .albums-artist-name {
@@ -197,6 +229,14 @@ a {
 	display: inline-block;
 }
 
+.profile_view_header {
+	width: 120px;
+	text-align: center;
+	height: 100px;
+	display: inline-block;
+	padding-left: 140px;
+}
+
 .contact_list_plus_icon{
 	width: 120px;
 	text-align: center;
@@ -205,13 +245,15 @@ a {
 }
 
 .profile-icon {
-	width: 120px;
+	width: 100px;
 	text-align: center;
 	height: 150px;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: -20px;
 	display: inline-block;
+	position: absolute;
+	padding-top: 30px;
 }
 
 /* .search {
@@ -297,6 +339,15 @@ a {
 	padding-left: 10px;
 	margin-bottom: 15px;
 	color: white;
+	font-size: 10px;
+}
+
+.profile_view_contacted {
+	font-style: italic;
+	text-align: left;
+	width: 120px;
+	margin-left: 10px;
+	color: rosybrown;
 	font-size: 10px;
 }
 
@@ -546,8 +597,9 @@ a {
     font-size: 20px;
     text-align: left;
     padding-left: 10px;
-    width: 145px;
-    color: white;
+    width: 100px;
+    color: black;
+		margin-bottom: 2px;
 }
 
 .profile_category{
@@ -557,7 +609,7 @@ text-align: left;
 padding-left: 40px;
 margin-top: 20px;
 width: 100px;
-color: whitesmoke;
+color: rosybrown;
 display: inline-block;
 }
 
@@ -567,8 +619,15 @@ text-align: left;
 padding-left: 10px;
 margin-top: 20px;
 width: 100px;
-color: white;
+color: gray;
 display: inline-block;
+}
+
+.profile_info_container{
+	margin-top: 40px;
+	width: 300px;
+	background-color: white;
+	height: 400;
 }
 
 .logout {
