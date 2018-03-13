@@ -378,6 +378,18 @@ a {
 	font-size: 10px;
 }
 
+#fb1 {
+	display: none;
+}
+
+#insta1 {
+	display: none;
+}
+
+#snap1 {
+	display: none;
+}
+
 .profile_view_contacted {
 	font-style: italic;
 	text-align: left;

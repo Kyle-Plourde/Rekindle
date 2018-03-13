@@ -3,7 +3,22 @@
         <title>Contact List</title>
         <link rel="stylesheet" type="text/css" href="format.css"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>window.onload = function() {
+      var fb = localStorage.getItem('fb');
+      var insta = localStorage.getItem('insta');
+      var snap = localStorage.getItem('snap');
+
+      if (fb === 'true') {
+        document.getElementById("fb1").style.display = "inline-block";
+      }
+      if (insta === 'true') {
+        document.getElementById("insta1").style.display = "inline-block";
+      }
+      if (snap === 'true') {
+        document.getElementById("snap1").style.display = "inline-block";
+      }
+    } </script>
     </head>
     <body>
       <div id="contact_profile_background">
@@ -22,9 +37,9 @@
               <div class= "profile_view_header">
                 <div class= "profile_view_name">James Greenfield</div>
                 <div class="profile_view_icon_container">
-                  <div><img class="profile_view_icon" src="images/fb.png"></div>
-                  <div><img class="profile_view_icon" src="images/insta.png"></div>
-                  <div><img class="profile_view_icon" src="images/snap.png"></div>
+                  <div><img id="fb1" class="profile_view_icon" src="images/fb.png"></div>
+                  <div><img id="insta1" class="profile_view_icon" src="images/insta.png"></div>
+                  <div><img id="snap1" class="profile_view_icon" src="images/snap.png"></div>
                 </div>
                 <div class= "profile_view_contacted">Last Contact:</div>
                 <div class= "profile_view_contacted">2 days ago via Facebook</div>
