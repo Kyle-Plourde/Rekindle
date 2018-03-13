@@ -26,13 +26,13 @@ form
 {
     font-family: 'Roboto', sans-serif;
     margin: 60px;
-    top: 280px;
+    top: 230px;
     position: absolute;
 }
 
 .input
 {
-    width: 170px;
+    width: 200px;
     margin-bottom: 30px;
     margin-left: 10px;
     padding-top: -150px;
@@ -58,41 +58,45 @@ em
 .login_button
 {
     position: absolute;
-    top: 150px;
+    top: 230px;
     width: 100px;
     left: 44px;
     border-radius: 15px;
     border: 1px solid white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: darkslategray;
 }
 
 #username
 {
     position: absolute;
-    top: 0px;
-    left: -1px;
+    top: 70px;
+    left: -20px;
     height: 30px;
-    text-align: center;
-    border-radius: 15px;
-    border: 1px solid grey;
+    text-align: left;
+    text-indent: 15px;
+    border-radius: 12px;;
+    border: 1px solid rgba(4, 17, 22, 0.186);
+    font-size: 14px;
 }
 
 #password
 {
     position: absolute;
-    top: 50px;
-    left: -1px;
+    top: 120px;
+    left: -20px;
     height: 30px;
-    text-align: center;
-    border-radius: 15px;
-    border: 1px solid grey;
+    text-align: left;
+    text-indent: 15px;
+    border-radius: 12px;;
+    border: 1px solid rgba(4, 17, 22, 0.186);
+    /* background: lightgoldenrodyellow; */
+
+    font-size: 14px;
 }
 
-/* unvisited */
-a:link {
-    color: pink;
-}
 
-/* visited */
-a:visited {
+a {
     color: white;
 }
