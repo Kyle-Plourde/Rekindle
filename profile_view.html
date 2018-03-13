@@ -18,7 +18,27 @@
       if (snap === 'true') {
         document.getElementById("snap1").style.display = "inline-block";
       }
-    } </script>
+    } 
+    window.onload = function() {
+      var notif = localStorage.getItem('notif');
+
+      if (notif === 'weekly') {
+        document.getElementById('notification').innerHTML = "1 Week";
+      }
+
+      else if (notif === 'biweekly') {
+        document.getElementById('notification').innerHTML = "2 Weeks";
+      }
+
+      else if (notif === 'monthly') {
+        document.getElementById('notification').innerHTML = "1 Month";
+      }
+
+      else if (notif === 'annually') {
+        document.getElementById('notification').innerHTML = "1 Year";
+      }
+    }
+    </script>
     </head>
     <body>
       <div id="contact_profile_background">
@@ -51,7 +71,7 @@
 
               <div class="profile_info_container">
               <div class="profile_category">Notification Period:</div>
-                <div class="profile_info">2 weeks</div>
+                <div id="notification" class="profile_info"></div>
               <div class="profile_category">Anniversary:</div>
                 <div class="profile_info">March 15</div>
               <div class="profile_category">Birthday:</div>

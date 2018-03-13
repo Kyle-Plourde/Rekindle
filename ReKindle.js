@@ -47,3 +47,43 @@ function addsnap()
         localStorage.setItem('snap', 'false');
     }
 }
+
+function notifweekly()
+{
+    //localStorage.setItem('weekly', 'true');
+    //localStorage.setItem('bi-weekly','false');
+    //localStorage.setItem('monthly', 'false');
+    //localStorage.setItem('annually', 'false');
+
+    localStorage.setItem('notif', 'weekly');
+}
+
+function notifbiweekly()
+{
+/*     localStorage.setItem('weekly', 'false');
+    localStorage.setItem('bi-weekly','true');
+    localStorage.setItem('monthly', 'false');
+    localStorage.setItem('annually', 'false'); */
+
+    localStorage.setItem('notif', 'biweekly');
+}
+
+function notifmonthly()
+{
+/*     localStorage.setItem('weekly', 'false');
+    localStorage.setItem('bi-weekly','false');
+    localStorage.setItem('monthly', 'true');
+    localStorage.setItem('annually', 'false'); */
+
+    localStorage.setItem('notif', 'monthly');
+}
+
+function notifannually()
+{
+/*     localStorage.setItem('weekly', 'false');
+    localStorage.setItem('bi-weekly','false');
+    localStorage.setItem('monthly', 'false');
+    localStorage.setItem('annually', 'true'); */
+
+    localStorage.setItem('notif', 'annually');
+}
