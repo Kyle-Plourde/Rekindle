@@ -6,19 +6,20 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-        <div id="screen">
+        <div id="contact_list_background">
               <div class="head-bar2">
+                <a href="home-init.html">
                 <a href="home_init.html">
-                  <img class="home-logo" src="images/logo-black.jpg" alt= "back"></a>
+                  <img class="home-logo" src="images/logo-white.png" alt= "home"></a>
                 </div>
 
-              <div class= "songs-info-wrapper">
-                <div><img class="songs-album-art" src="images/plus.png" alt="plus"></div>
+              <div class= "contact_list_plus_icon">
+                <div><img class="large_icon_topleft" src="images/plus_black.png" alt="plus"></div>
               </div>
 
               <div class= "songs-info-wrapper">
-                <div class= "contact_list_title">Add Favorite</div>
-                <div class= "songs-artist-name">select contact below</div>
+                <div class= "contact_list_title">Add Contact</div>
+                <div class= "contact_list_description">select from contacts below</div>
                 <div><br></div>
                 <!-- above row for spacing, wrapper will not move out without filling space
                 for a reason unknown to me or two TA's in office hours-->
@@ -32,7 +33,7 @@
 					  };
 					  $(function() {
 						  $('#search').keyup(function() {
-							  
+
 							  var match = $('.list-of-names').find('li:Contains(' + $(this).val() + ')');
 							  $('li', '.list-of-names').not(match).slideUp();
 							  match.slideDown();
@@ -46,42 +47,78 @@
 
               <ol class= "list-of-names">
 			    <a href="Error.html">
-				  <li class= "songs-text-info">Harry <strong>Bayman Jr. IV</strong></li>
+				  <li class= "contact_list_names">
+            <div class="first_name">Harry </div>
+            <div class="last_name"><strong>Bayman</strong></div></li>
 				</a>
 				<a href="Error.html">
-				  <li class= "songs-text-info">Casey <strong>Downing</strong></li>
+				  <li class= "contact_list_names">
+            <div class="first_name">Casey </div>
+            <div class="last_name"><strong>Downing</strong></div></li>
                 </a>
 				<a href="Error.html">
-				  <li class= "songs-text-info">Gloria <strong>Edwards</strong></li>
+				  <li class= "contact_list_names">
+            <div class="first_name">Gloria </div>
+            <div class="last_name"><strong>Edwards</strong></div></li>
                 </a>
 				<a href="Error.html">
-				  <li class= "songs-text-info">Edmond <strong>Fisher</strong></li>
+				  <li class= "contact_list_names">
+            <div class="first_name">Edmond </div>
+            <div class="last_name"><strong>Fisher</strong></div></li>
                 </a>
 				<!--Click this one!-->
 				<a href="home_one_contact.html">
-                  <li class= "songs-text-info">James <strong>Greenfield</strong></li>
+                  <li class= "contact_list_names">
+                    <div class="first_name">James </div>
+                    <div class="last_name"><strong>Greenfield</strong></div></li>
 				</a>
 			    <a href="Error.html">
-                  <li class= "songs-text-info">Aaron <strong>Judah</strong></li>
+                  <li class= "contact_list_names">
+                    <div class="first_name">Aaron </div>
+                    <div class="last_name"><strong>Judah</strong></div></li>
 				</a>
 				<a href="Error.html">
-                  <li class= "songs-text-info">Farah <strong>Kramer</strong></li>
+                  <li class= "contact_list_names">
+                    <div class="first_name">Farah </div>
+                    <div class="last_name"><strong>Kramer</strong></div></li>
                 </a>
 				<a href="Error.html">
-				  <li class= "songs-text-info">Derek <strong>Lee</strong></li>
+				  <li class= "contact_list_names">
+            <div class="first_name">Derek </div>
+            <div class="last_name"><strong>Lee</strong></div></li>
                 </a>
 				<a href="Error.html">
-                  <li class= "songs-text-info">Bobby <strong>McGee</strong></li>
+                  <li class= "contact_list_names">
+                    <div class="first_name">Bobby </div>
+                    <div class="last_name"><strong>McGee</strong></div></li>
 				</a>
 				<a href="Error.html">
-                  <li class= "songs-text-info">Carina <strong>Venera</strong></li>
-                </a>
-				<a href="Error.html">
-                  <li class= "songs-text-info">Carina <strong>Venera 2</strong></li>
-                </a>
-				<a href="Error.html">
-                  <li class= "songs-text-info">Carina <strong>Venera 3</strong></li>
-                </a>
+                  <li class= "contact_list_names">
+                    <div class="first_name">Carina </div>
+                    <div class="last_name"><strong>Nenera</strong></div></li>
+        </a>
+        <a href="Error.html">
+                  <li class= "contact_list_names">
+                    <div class="first_name">Geoff </div>
+                    <div class="last_name"><strong>Oliver</strong></div></li>
+        </a>
+        <a href="Error.html">
+                  <li class= "contact_list_names">
+                    <div class="first_name">George </div>
+                    <div class="last_name"><strong>Richards</strong></div></li>
+        </a>
+        <a href="Error.html">
+                  <li class= "contact_list_names">
+                    <div class="first_name">Mary </div>
+                    <div class="last_name"><strong>Williams</strong></div></li>
+        </a>
+        <a href="Error.html">
+                  <li class= "contact_list_names">
+                    <div class="first_name">Arturo </div>
+                    <div class="last_name"><strong>Zandoval</strong></div></li>
+        </a>
+
+
               </ol>
         </div>
     </body>
