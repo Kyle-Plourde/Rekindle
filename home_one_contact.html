@@ -4,8 +4,15 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
 				<link rel="stylesheet" type="text/css" href="format.css"/>
 				<script src="ReKindle.js"></script>
+				<script>window.onload = function() {
+					var show = localStorage.getItem('james');
+					if (show === 'true'){
+						document.getElementById("james").style.display = "block";
+					}
+				}
+					</script>
     </head>
-    <body onload="jamesadded()">
+    <body>
         <div id="screen">
 						<div class="backimage"><img src="images/homebackground.png"></div>
 						<a href="index.html"><div class="logout"><img src="images/logoutprofile.png"></div></a>

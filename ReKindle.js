@@ -1,4 +1,13 @@
+function init()
+{
+    localStorage.setItem('james', false);
+}
 
+function addjames()
+{
+    localStorage.setItem('james', true);
+    document.location.href = "home_one_contact.html";
+}
 
 function jamesadded ()
 {
