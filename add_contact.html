@@ -3,6 +3,20 @@
 		<title>Add Contact</title>
 		<link rel="stylesheet" type="text/css" href="format.css"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script>
+			var count = 1;
+			function setColor(btn, color) {
+				var property = document.getElementById(btn);
+				if (count == 0) {
+					property.style.backgroundColor = "white"
+					count = 1;        
+				}
+				else {
+					property.style.backgroundColor = "rgb(120, 214, 99)"
+					count = 0;
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<div id="add_profile_background">
@@ -30,15 +44,15 @@
 
 			<div class="social_media_container">
 			<div class="social-media-addContact">
-				<button>
+				<button id="btn1" onclick="setColor('btn1', 'rgb(99, 214, 99)');">
 					<img id="fb" src="images/fb.png">
 					Connect on Facebook
 				</button>
-				<button>
+				<button id="btn2" onclick="setColor('btn2', 'rgb(99, 214, 99)');">
 					<img id="insta" src="images/insta.png">
 					Connect on Instagram
 				</button>
-				<button>
+				<button id="btn3" onclick="setColor('btn3', 'rgb(99, 214, 99)');">
 					<img id="snap" src="images/snap.png">
 					Connect on Snapchat
 				</button>
