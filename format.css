@@ -346,10 +346,22 @@ a {
 .dropdown {
 	position: relative;
 	display: inline-block;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+
+.dropdown button {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	width: 250px;
+	background-color: white;
+	box-shadow: 1px 1px 1px #888888;
+	border-radius: 10px;
 }
 
 .dropdown-content {
-	//position: absolute;
 	display: none;
 	background-color: #f1f1f1;
 	min-width: 100px;
@@ -371,7 +383,28 @@ a {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #9cd3f9;
+}
+
+.advance {
+	margin-top: 25px;
+	margin-left: 175px;
+	text-align: center;
+}
+
+.advance a {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	width: 100px;
+	background-color: #E5F2E5;
+	box-shadow: 1px 1px 3px #888888;
+	border-radius: 10px;
+}
+
+.advance a:hover {
+	background-color: #cce5cc;
 }
 
 .songs-album-year {
