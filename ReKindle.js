@@ -72,6 +72,7 @@ function notifweekly()
     //localStorage.setItem('annually', 'false');
 
     localStorage.setItem('notif', 'weekly');
+    document.getElementsByClassName('dropbtn')[0].innerHTML = 'Notification Period: 1 Week';
 }
 
 function notifbiweekly()
@@ -82,6 +83,7 @@ function notifbiweekly()
     localStorage.setItem('annually', 'false'); */
 
     localStorage.setItem('notif', 'biweekly');
+    document.getElementsByClassName('dropbtn')[0].innerHTML = 'Notification Period: 2 Weeks';
 }
 
 function notifmonthly()
@@ -92,6 +94,7 @@ function notifmonthly()
     localStorage.setItem('annually', 'false'); */
 
     localStorage.setItem('notif', 'monthly');
+    document.getElementsByClassName('dropbtn')[0].innerHTML = 'Notification Period: 1 Month';
 }
 
 function notifannually()
@@ -100,6 +103,26 @@ function notifannually()
     localStorage.setItem('bi-weekly','false');
     localStorage.setItem('monthly', 'false');
     localStorage.setItem('annually', 'true'); */
-
+    
     localStorage.setItem('notif', 'annually');
+    document.getElementsByClassName('dropbtn')[0].innerHTML = 'Notification Period: 1 Year';
+}
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
