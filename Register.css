@@ -64,10 +64,12 @@ label
 input.button
 {
     font-family: 'Roboto', sans-serif;
+    font-size: 11px;
     width: 30%;
+    height: 30px;
     position: absolute;
     top: 280px;
-    left: 150px;
+    left: 89px;
 }
 
 .backimage img
@@ -76,19 +78,33 @@ input.button
     position: relative;
 }
 
-#backbutton
-{
-    width: 80px;
-    position: absolute;
-    top: 495px;
-    left: 84px;
-    height: 21px;
-    border-radius: 6px;
-    border: 1px solid white;
-}
 
 #regibutton
 {
     text-align: center;
-    padding-top: 2px;
+}
+
+.register_back {
+    position: absolute;
+    top: 115px;
+    left: 41px;
+    width: 30px;
+}
+
+.advance input {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	width: 100px;
+	box-shadow: 1px 1px 3px #888888;
+	border-radius: 10px;
+}
+
+.advance input:hover {
+	background-color: #cce5cc;
+}
+
+.advance {
+	text-align: center;
 }
