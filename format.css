@@ -694,11 +694,19 @@ display: inline-block;
 
 .logout {
 	position: absolute;
-	top: 122px;
-	left: 45px;
+	top: 108px;
+	left: 300px;
 	padding: 1px;
 	border: 2px solid white;
 	border-radius: 50%;
+}
+
+.logout i {
+	padding: 3px;
+}
+
+.logout:hover {
+	color: #cc99cc;
 }
 
 .show {display:block;}
